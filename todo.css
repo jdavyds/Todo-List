@@ -1,0 +1,299 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#home {
+    width: 100vw;
+    min-height: 100vh;
+    height: fit-content;
+    background: burlywood;
+}
+#home header {
+    background: rgb(22, 218, 185, 0.5);
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header-left {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#home form {
+    display: none;
+    background: rgba(50, 87, 81);
+    color: azure;
+    width: 350px;
+    height: 120px;
+    padding: 5px 0 0 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 67px;
+    left: 0px;
+    animation: fadeInAnimation ease-in 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.push {
+    position: absolute;
+    top: -12px;
+    transform: rotate(50deg);
+    width: 30px;
+    height: 30px;
+    background: rgb(42, 71, 67);
+    z-index: 1;
+}
+#home input {
+    width: 80%;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    background: darkkhaki;
+    outline: none;
+}
+#home form button {
+    height: 35px;
+    float: left;
+    margin: 5px 30px 0 0;
+}
+.header-right {
+    background-color: rgb(13, 175, 148, 0.5);
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 0 5px 0 grey;
+    border-radius: 5px;
+}
+#home button.active {
+    background: rgb(133, 206, 133);
+}
+#home button {
+    background: rgb(144, 238, 144);
+    height: 70%;
+    width: 100px;
+    margin: 1px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.home-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.add-profile-div {
+    font-size: 30px;
+    font-weight: 500;
+}
+#home div {
+    background: darksalmon;
+    width: 18%;
+    height: 250px;
+    margin: 35px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+#home div:nth-of-type(2n) {
+    background: darkgoldenrod;
+}
+#home div:nth-of-type(3n) {
+    background: darkkhaki;
+}
+#home div span {
+    font-size: 25px;
+    margin: 10px;
+    text-align: center;
+}
+.all-main {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+i {
+    opacity: 0.5;
+}
+#todos {
+    display: none;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: burlywood;
+}
+#todos header {
+    background: rgb(22, 218, 185, 0.5);
+    width: 100vw;
+    height: 60px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+}
+#todos header button {
+    background: rgb(22, 218, 185, 0.5);
+    margin: 0 50px 0 50px;
+    height: 100%;
+    width: 40px;
+    font-size: 25px;
+    border: none;
+}
+#todos header p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.todos-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.todos-div {
+    background: rgb(103, 139, 67);
+    width: 50%;
+    height: 45px;
+    margin: 20px;
+    border-radius: 5px;
+}
+.todos-div label {
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todos-div button {
+    height: 100%;
+    font-size: 30px;
+    background: inherit;
+    border: none;
+}
+.todos-input {
+    background: inherit;
+    width: 95%;
+    height: 100%;
+    border: none;
+    font-size: 20px;
+    color: white;
+    outline: none;
+}
+.new-nav {
+    background: rgb(103, 139, 67);
+    width: 50%;
+    height: fit-content;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.todo {
+    width: 100%;
+    height: 45px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo input {
+    background: inherit;
+    width: fit-content;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 22px;
+}
+.todo button {
+    background: rgb(136, 192, 80);
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+}
+
+.details {
+    display: none;
+}
+.active {
+    width: 100%;
+    height: 270px;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.active label {
+    margin: 10px 0;
+}
+.active section {
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+.active textarea {
+    background: wheat;
+    height: 70%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+}
+.active select, 
+.active input {
+    background: wheat;
+    width: 70%;
+    height: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}
+.active select {
+    height: fit-content;
+}
+.active option {
+    padding: 10px;
+    background: rgb(42, 71, 67);
+    color: azure;
+    border-top: 1px solid red;
+}
+.active button {
+    background: rgb(231, 40, 40, 0.7);
+    width: 35%;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: auto 30px 30px auto;
+}

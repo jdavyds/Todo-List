@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="todo.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div id="home">
+        <header>
+            <nav class="header-left">
+                <button class="new-profile">New Profile</button>
+                <form>
+                    <i class="push"></i>
+                    <label for="Profile Name" class="label">
+                        Profile Name <br>
+                        <input type="text" name="new-profile" id="new-profile-input" required>
+                    </label>
+                    <button class="cancel">Cancel</button>
+                    <button class="create">Create Profile</button>
+                </form>
+            </nav>
+            <nav class="header-right">
+                <button class="profile active">
+                    Profiles
+                </button>
+                <button class="all">
+                    All To-Dos
+                </button>
+            </nav>
+        </header>
+        <main class="home-main">
+            <div class="add-profile-div">
+                Add Profile <br>
+                +
+            </div>
+        </main>
+        <main class="all-main">
+            <h3>This Page is in Progress. 
+                <br>
+               FUTA Exam calls, i must answer. <br>
+               Will be back for U, Promise.
+            </h3>
+        </main>
+    </div>
+    <div id="todos">
+        <header>
+            <button class="back"> < </button>
+            <p>
+                <span class="todos-span"></span>
+                <i>On This Computer</i>
+            </p>
+        </header>
+        <main class="todos-main">
+            <div class="todos-div">
+                <label for="new">
+                    <button class="add-todo">+</button>
+                    <input type="text" placeholder="New task" class="todos-input" required>
+                </label>
+            </div>
+        </main>
+        <script src="todo.js"></script>
+        <script src="todos.js"></script>
+    </div> 
+</body>
+
+</html>
